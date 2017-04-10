@@ -17,11 +17,11 @@ import static org.junit.Assert.*;
 public class StringValueServiceTest {
 
     @Resource
-    StringValueService stringValueService;
+    private StringValueService stringValueService;
 
     @Test
     public void init() throws Exception {
-        this.stringValueService.init();
+        this.stringValueService.test();
     }
 
 }

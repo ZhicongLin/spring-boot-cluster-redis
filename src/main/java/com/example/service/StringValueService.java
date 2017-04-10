@@ -16,7 +16,7 @@ public class StringValueService {
     @Resource
     private StringRedisTemplate stringRedisTemplate;
 
-    public void init(){
+    public void test(){
         this.stringRedisTemplate.opsForValue().set("test", "1123dsfg1");
         this.stringRedisTemplate.opsForValue().set("test2", "1123dsf2g1");
         System.out.println(this.stringRedisTemplate.opsForValue().get("test"));
